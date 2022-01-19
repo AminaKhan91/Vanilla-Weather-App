@@ -18,8 +18,90 @@
   </head>
   <body>
     <div class="container">
-      <h1>Hello World</h1>
-      <a href "" class="btn btn-primary">Click Me! </a>
+      <div class="weather-app"> 
+      <form id="search-form">
+        <input
+          type="text"
+          placeholder="Search for a city"
+          autofocus="on"
+          autocomplete="off"
+          id="search-text-input"
+        />
+        <input type="submit" class="search" />
+        <input
+          type="submit"
+          value="Current"
+          id="current-location-button"
+          class="location-button"
+        />
+      </form>
+      <br />
+      <p id="date">Wednesday 17:30</p>
+
+      <div class="row">
+        <div class="col-6">
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
+            alt="cloudy"
+          />
+          6°C |°F
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">Max Temperature: 10°C</div>
+        <div class="col-4">Humidity: 73%</div>
+        <div class="col-4">Windspeed: 2km/h</div>
+      </div>
+
+      <br /> 
+
+       <div class="row">
+          <div class="col-2">Saturday</div>
+          <div class="col-2">Sunday</div>
+          <div class="col-2">Monday</div>
+          <div class="col-2">Tuesday</div>
+          <div class="col-2">Wednesday</div>
+          <div class="col-2">Thursday</div>
+        </div>
+
+          <div class="row">
+          <div class="col-2">
+            <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="cloudy"/>
+          </div>
+          <div class="col-2">
+            <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="cloudy"/>
+          </div>
+          <div class="col-2"><img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="cloudy"/></div>
+          <div class="col-2">
+            <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="cloudy"/>
+          </div>
+          <div class="col-2">
+            <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="cloudy"/>
+          </div>
+          <div class="col-2">
+            <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="cloudy"/>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-2 symbol-data">9°C</div>
+            <div class="col-2 symbol-data">7°C</div>
+            <div class="col-2 symbol-data">8°C</div>
+            <div class="col-2 symbol-data">8°C</div>
+            <div class="col-2 symbol-data">7°C</div>
+            <div class="col-2 symbol-data">8°C</div>
+          </div>
+          <br />
+          </div>
+
+          <small>
+        <strong>
+          <a href="https://github.com/AminaKhan91/Vanilla-Weather-App" target="_blank"
+            >Open-source code
+          </a>
+          by Amina Khan</strong
+        >
+          </small>
     </div>
     <script src="src/app.js"></script>
   </body>

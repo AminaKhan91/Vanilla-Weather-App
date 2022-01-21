@@ -75,13 +75,17 @@ li:first-letter {
 
 .col-6 {
   text-align: center;
-  margin-left: 150px;
+  margin-left: 140px;
   margin-bottom: 20px;
 }
 
+.weather-temperature {
+  text-align: center;
+}
 .temperature {
   color: #363636;
   font-size: 45px;
+  margin-left: 25px;
 }
 
 .units {

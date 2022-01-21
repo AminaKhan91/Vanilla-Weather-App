@@ -69,6 +69,10 @@ li {
   text-transform: capitalize;
 }
 
+li:first-letter {
+  text-transform: capitalize;
+}
+
 .col-6 {
   text-align: center;
   margin-left: 150px;

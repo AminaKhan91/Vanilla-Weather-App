@@ -13,8 +13,10 @@
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
 
     <link rel="stylesheet" href="src/style.css" />
 
@@ -42,9 +44,14 @@
             />
           </form>
           <br />
-          <p id="date" class="date"><strong> Wednesday 17:30 </strong></p>
+          <div class="overview">
+          <ul>
+            <li id="date" class="date"><strong> Wednesday 17:30 </strong> </li>
+            <li id="description">  </li>
+          </ul>
+         </div>
 
-          <h1> (Country Entered)</h1>
+          <h1 id="city"></h1>
 
           <div class="row">
             <div class="col-6">
@@ -54,16 +61,16 @@
                 alt="cloudy"
                 class="float-left"
               />
-              <div class="float-left"><strong class="temperature">6</strong><span class="units">°C | <a href="#">°F</a></span></div>
+              <div class="float-left"><strong id="temperature" class="temperature">6</strong><span class="units">°C | <a href="#">°F</a></span></div>
               </div>
               </div>
             </div>
           
 
           <div class="row">
-            <div class="col-4">Max Temp: 10°C</div>
-            <div class="col-4">Humidity: 73%</div>
-            <div class="col-4">Windspeed: 2km/h</div>
+            <div class="col-4">Max Temp: <span id="max-temp"></span>°C</div>
+            <div class="col-4">Humidity: <span id="humidity"> </span>%</div>
+            <div class="col-4">Wind: <span id="wind"></span>km/h</div>
           </div>
 
           <br />

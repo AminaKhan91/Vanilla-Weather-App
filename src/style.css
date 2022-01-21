@@ -5,6 +5,7 @@ body {
 h1 {
   text-align: center;
   color: #00204a;
+  margin-bottom: 0;
 }
 
 .weather-app-wrapper {
@@ -53,6 +54,19 @@ h1 {
 
 .date {
   color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+  text-transform: capitalize;
 }
 
 .col-6 {

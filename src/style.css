@@ -76,8 +76,8 @@ li:first-letter {
 }
 
 .col-6 {
-  text-align: center;
-  margin-left: 140px;
+  display: block;
+  margin-left: 130px;
   margin-bottom: 20px;
 }
 

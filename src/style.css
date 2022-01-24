@@ -132,6 +132,7 @@ li:first-letter {
   border: 1px solid #302f2f;
   border-radius: 20px;
   border-spacing: 5px 1rem;
+  background-color: #22559c;
 }
 
 .col-2:hover {

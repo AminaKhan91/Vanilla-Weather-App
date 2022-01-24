@@ -94,7 +94,6 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "2b57e8c8e53ab345628a7d30def85137";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
@@ -190,3 +189,23 @@ let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayCelciusTemperature);
 
 search("London");
+
+function displayBackgroundImage() {
+  let now = new Date();
+  let imageOneUrl = "https://wallpaperaccess.com/full/3364039.jpg";
+  let imageTwoUrl =
+    "https://digest.bps.org.uk/wp-content/uploads/2015/05/2819d-thinkstockphotos-482133835.jpg";
+
+  if (now.getHours() > 6 && now.getHours() < 20) {
+    document.getElementById("#weather-app").style.backgroundImage = imageOneUrl;
+  } else {
+    document.getElementById("#weather-app").style.backgroundImage = imageTwoUrl;
+  }
+}
+
+let backgroundImage = document.querySelector("#weather-app");
+backgroundImage.setAttribute(
+  "src",
+  `https://wallpaperaccess.com/full/3364039.jpg`
+);
+backgroundImage.setAttribute("alt", displayBackgroundImage);

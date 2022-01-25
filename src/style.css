@@ -41,6 +41,7 @@ li:first-letter {
     rgb(251, 128, 128) 90%
   );
   background-image: url("https://wallpaperaccess.com/full/3364039.jpg");
+  width: 600px;
 }
 
 .search-form {

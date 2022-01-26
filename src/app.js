@@ -175,14 +175,13 @@ function displayBackgroundImage() {
   imageTwoUrl.style.width = "600px";
 
   if (now.getHours() > 6 && now.getHours() < 20) {
-    document.getElementById("#weather-app").style.backgroundImage = imageOneUrl;
+    document.querySelector(
+      "#weather-app"
+    ).style.backgroundImage = `url("${imageOneUrl}")`;
   } else {
-    document.getElementById("#weather-app").style.backgroundImage = imageTwoUrl;
+    document.querySelector(
+      "#weather-app"
+    ).style.backgroundImage = `url("${imageTwoUrl}")`;
   }
 }
-
-let backgroundImage = document.querySelector("#weather-app");
-backgroundImage.setAttribute(
-  "src",
-  `https://wallpaperaccess.com/full/3364039.jpg`
-);
+displayBackgroundImage();

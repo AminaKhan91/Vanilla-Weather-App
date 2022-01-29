@@ -171,8 +171,6 @@ function displayBackgroundImage() {
   let imageOneUrl = "https://wallpaperaccess.com/full/3364039.jpg";
   let imageTwoUrl =
     "https://digest.bps.org.uk/wp-content/uploads/2015/05/2819d-thinkstockphotos-482133835.jpg";
-  imageOneUrl.style.width = "600px";
-  imageTwoUrl.style.width = "600px";
 
   if (now.getHours() > 6 && now.getHours() < 20) {
     document.querySelector(

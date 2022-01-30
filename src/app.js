@@ -168,7 +168,8 @@ search("London");
 
 function displayBackgroundImage() {
   let now = new Date();
-  let imageOneUrl = "https://wallpaperaccess.com/full/3364039.jpg";
+  let imageOneUrl =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT_54yU7Kdhiq7xZ9oalYTxxBGN_8_wMW8QA&usqp=CAU";
   let imageTwoUrl =
     "https://digest.bps.org.uk/wp-content/uploads/2015/05/2819d-thinkstockphotos-482133835.jpg";
 

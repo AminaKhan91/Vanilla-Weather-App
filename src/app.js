@@ -171,7 +171,7 @@ function displayBackgroundImage() {
   let imageOneUrl =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT_54yU7Kdhiq7xZ9oalYTxxBGN_8_wMW8QA&usqp=CAU";
   let imageTwoUrl =
-    "https://digest.bps.org.uk/wp-content/uploads/2015/05/2819d-thinkstockphotos-482133835.jpg";
+    "https://d.newsweek.com/en/full/1821073/moon-sky.jpg?w=1600&h=1600&q=88&f=939654ad4f9c1147140994979e21a740";
 
   if (now.getHours() > 6 && now.getHours() < 20) {
     document.querySelector(
@@ -181,6 +181,8 @@ function displayBackgroundImage() {
     document.querySelector(
       "#weather-app"
     ).style.backgroundImage = `url("${imageTwoUrl}")`;
+    document.querySelector("#temperature").style.color = "white";
+    document.querySelector("#units").style.color = "white";
   }
 }
 displayBackgroundImage();
